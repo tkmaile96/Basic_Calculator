@@ -6,8 +6,58 @@
 :root{
     --white: #FFFFFF;
     --blue: #0a5afc;
-    --black: #000000;
+    --black: #403f3f;
     --silver: #C7C5B8;
     --orange: #FF9900;
+    --red: #FF0000;
+    --pink: #f10ead;
+
 }
 
+/*== Global styling ==*/
+body{
+    cursor: pointer;
+    background: var(--black);
+}
+
+
+table {
+    color:var(--white);
+    text-align: center;
+    border-collapse: collapse;
+    font: normal 2.1em monospace;
+    margin: 100px auto 20px;
+    
+
+}
+tr{
+   height: 10vh;
+   background: var(--blue);
+
+}
+td{
+ width: 5vw;
+ border: 5px transparent var(--silver);
+}
+
+#input-box{
+    width: 100%;
+    font:bolder;
+    font-size: 2em;
+    color: var(--white);
+    background: var(--silver);
+}
+
+/* == BUTTONS == */
+.AcBtn,
+.delBtn {
+    color: var(--red);
+    border-radius: 50%;
+}
+.operatorBtn{
+    border-radius: 50%;
+    color: var(--orange);
+}
+.digitalBtn{
+    border-radius: 50%;
+}
