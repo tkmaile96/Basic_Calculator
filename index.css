@@ -16,7 +16,7 @@
 
 /*== Global styling ==*/
 body{
-    cursor: pointer;
+    cursor:pointer;
     background: var(--black);
 }
 
@@ -42,16 +42,43 @@ td{
 #input-box{
     width: 100%;
     font:bolder;
-    font-size: 3em;
+    font-size: 1.7em;
     color: var(--white);
-    background: var(--silver);
+    background: var(--black);
     
 }
 
 /* == BUTTONS == */
+.digitalBtn{
+    background:#403f3f;
+}
+
+.digitalBtn:hover{
+    background: #828080;
+}
 
 .operatorBtn{
-
-    color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
 }
+.operatorBtn:hover{
+    background-color:#f3b250;
+}
+.ACBtn{
+    background: var(--red);
+}
+.ACBtn:hover{
+    background: #f45555;
+}
+.btn:hover{
+    background-color:#5289f6;
+}
+.equalsBtn{
+    background: #885902;
+}
+.equalsBtn:hover{
+    background: #f7d2c4;
+}
+
+
 
