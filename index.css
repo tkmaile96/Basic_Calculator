@@ -81,6 +81,8 @@ tr{
 
 #input-box {
     text-align: right;
+    width: 100%;
+    padding: 5px;
     font: 1.3em monospace;
     border: none;
     outline: none;
