@@ -14,6 +14,14 @@
                 <input type="text" id="input-box" value="0" />
             </td>
         </tr>
+        <tr>
+            
+              <td class="ACBtn" onclick="AcBtnPressed()">AC</td>
+            <td>()</td>
+            <td>%</td>
+             <td class="operatorBtn" onclick="operatorBtnPressed('/')">&divide;</td>
+            
+        </tr>
       
         <tr>
             <td class="digitalBtn" onclick="digitalBtnPressed(7)">7</td>
@@ -34,16 +42,12 @@
             <td class="operatorBtn" onclick="operatorBtnPressed('+')">&plus;</td>
         </tr>
         <tr>
-            <td class="digitalBtn" onclick="digitalBtnPressed(0)" colspan="2">0</td>
-            <td class="ACBtn" onclick="AcBtnPressed()">AC</td>
-            <td class="operatorBtn" onclick="operatorBtnPressed('/')">&divide;</td>
-        </tr>
-        <tr>
-            <td class="operatorBtn" colspan="4" onclick="operatorBtnPressed('=')">&equals;</td>
-        </tr>
-     
-        
-       
+            <td>&PlusMinus;</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(0)">0</td>
+          <td>.</td>
+           <td class="operatorBtn" onclick="equalBtnPressed('=')">&equals;</td>
+           
+        </tr>  
     </table>
 </body>
 </html>
