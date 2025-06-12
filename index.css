@@ -3,85 +3,128 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
-    --white: #FFFFFF;
-    --blue: #0a5afc;
-    --black: #403f3f;
-    --silver: #C7C5B8;
-    --orange: #FF9900;
-    --red: #FF0000;
-    --pink: #f10ead;
-
+:root {
+    --button-pop-scale: 0.95;
+    --button-pop-duration: 0.1s;
+    --button-blink-duration: 0.3s;
 }
 
-/*== Global styling ==*/
-body{
-    cursor:pointer;
+/* Button click animation */
+td:active {
+    transform: scale(var(--button-pop-scale));
+    opacity: 0.8;
+    transition: transform var(--button-pop-duration), opacity var(--button-pop-duration);
+}
+
+/* Blink effect for operator buttons */
+.operatorBtn:active {
+    animation: blink var(--button-blink-duration);
+}
+
+/* Blink effect for equals button */
+.equalsBtn:active {
+    animation: blink var(--button-blink-duration);
+}
+
+/* Blink effect for AC button */
+.ACBtn:active {
+    animation: blink var(--button-blink-duration);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Enhanced color scheme */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background: var(--black);
 }
 
-
 table {
-    color:var(--white);
+    color: #fff;
     text-align: center;
     border-collapse: collapse;
     font: normal 3em monospace;
-    
+}
 
+td {
+    width: 25vw;
+    transition: all 0.2s ease;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+td:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+td:active:after {
+    opacity: 1;
 }
 tr{
-   height: 16.02vh;
-   background: var(--black);
-
-}
-td{
- width: 25vw;
- border:1px solid black;
+    height: 16.02vh;
 }
 
-#input-box{
-    width: 100%;
-    font:bolder;
-    font-size: 1.7em;
-    color: var(--white);
-    background: var(--black);
-    
+#input-box {
+    text-align: right;
+    padding: 5px;
+    font: 1.3em monospace;
+    border: none;
+    outline: none;
 }
 
-/* == BUTTONS == */
-.digitalBtn{
-    background:#403f3f;
+/* Color adjustments */
+.digitalBtn {
+    background: #3a3a3a;
 }
 
-.digitalBtn:hover{
-    background: #828080;
+.btn {
+    background: #2d2d2d;
 }
 
-.operatorBtn{
-    background-color: var(--orange);
-    color: var(--white);
-}
-.operatorBtn:hover{
-    background-color:#f3b250;
-}
-.ACBtn{
-    background: var(--red);
-}
-.ACBtn:hover{
-    background: #f45555;
-}
-.btn{
-    background: #2a2929;
-}
-.btn:hover{
-    background-color:var(--black);
-}
-.equalsBtn{
-    background: #e76800;
-}
-.equalsBtn:hover{
-    background:var(--orange);
+.operatorBtn {
+    background-color: #e67e22;
 }
 
+.ACBtn {
+    background: #e74c3c;
+}
 
+.equalsBtn {
+    background: #e67e22;
+}
 
+/* Hover effects */
+.digitalBtn:hover {
+    background: #4a4a4a;
+}
+
+.btn:hover {
+    background: #3a3a3a;
+}
+
+.operatorBtn:hover {
+    background-color: #f39c12;
+}
+
+.ACBtn:hover {
+    background: #c0392b;
+}
+
+.equalsBtn:hover {
+    background: #f39c12;
+}
