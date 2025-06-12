@@ -74,10 +74,10 @@ td{
     background-color:#5289f6;
 }
 .equalsBtn{
-    background: #885902;
+    background: #e76800;
 }
 .equalsBtn:hover{
-    background: #f7d2c4;
+    background:var(--orange);
 }
 
 

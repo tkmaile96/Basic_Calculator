@@ -63,27 +63,6 @@ function equalBtnPressed() {
     }
 }
 
-// Brackets button event handler
-function brackectsBtnPressed() {
-    var currentValue = document.getElementById("input-box").value;
-    if (newLine || currentValue === "0") {
-        document.getElementById("input-box").value = "(";
-        newLine = false;
-    } else {
-        // Count open and close parentheses to determine what to add
-        var openCount = (currentValue.match(/\(/g) || []).length;
-        var closeCount = (currentValue.match(/\)/g) || []).length;
-        
-        if (openCount <= closeCount || 
-            currentValue.slice(-1) === "(" || 
-            isOperator(currentValue.slice(-1))) {
-            document.getElementById("input-box").value = currentValue + "(";
-        } else {
-            document.getElementById("input-box").value = currentValue + ")";
-        }
-    }
-}
-
 // Percentage button event handler
 function percentageBtnPressed() {
     var currentValue = parseFloat(document.getElementById("input-box").value);
