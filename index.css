@@ -36,7 +36,7 @@ tr{
 }
 td{
  width: 25vw;
- border: 5px solid var(--silver);
+ border:1px solid black;
 }
 
 #input-box{
@@ -71,10 +71,10 @@ td{
     background: #f45555;
 }
 .btn{
-    background: var(--blue);
+    background: #2a2929;
 }
 .btn:hover{
-    background-color:#5289f6;
+    background-color:var(--black);
 }
 .equalsBtn{
     background: #e76800;
