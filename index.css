@@ -70,6 +70,9 @@ td{
 .ACBtn:hover{
     background: #f45555;
 }
+.btn{
+    background: var(--blue);
+}
 .btn:hover{
     background-color:#5289f6;
 }
