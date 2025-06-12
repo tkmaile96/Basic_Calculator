@@ -26,7 +26,6 @@ table {
     text-align: center;
     border-collapse: collapse;
     font: normal 2.1em monospace;
-    margin: 100px auto 20px;
     
 
 }
@@ -36,28 +35,23 @@ tr{
 
 }
 td{
- width: 5vw;
- border: 5px transparent var(--silver);
+ width: 25.02vw;
+ border: 5px solid var(--silver);
 }
 
 #input-box{
     width: 100%;
     font:bolder;
-    font-size: 2em;
+    font-size: 3em;
     color: var(--white);
     background: var(--silver);
+    
 }
 
 /* == BUTTONS == */
-.AcBtn,
-.delBtn {
-    color: var(--red);
-    border-radius: 50%;
-}
+
 .operatorBtn{
-    border-radius: 50%;
+
     color: var(--orange);
 }
-.digitalBtn{
-    border-radius: 50%;
-}
+
