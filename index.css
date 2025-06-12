@@ -25,17 +25,17 @@ table {
     color:var(--white);
     text-align: center;
     border-collapse: collapse;
-    font: normal 2.1em monospace;
+    font: normal 3em monospace;
     
 
 }
 tr{
-   height: 10vh;
+   height: 16.02vh;
    background: var(--blue);
 
 }
 td{
- width: 25.02vw;
+ width: 25vw;
  border: 5px solid var(--silver);
 }
 

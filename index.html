@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculato App</title>
     <link rel="stylesheet" href="index.css">
-    <script src="./main.js"></script>
+    <script src="/main.js" defer></script>
 </head>
 <body>
     <table border="1">
@@ -14,43 +14,34 @@
                 <input type="text" id="input-box" value="0" />
             </td>
         </tr>
+      
         <tr>
-           
-            <td class="operatorBtn" onclick="operatorBtnPresssed('square-root')">&radic;</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('squared')">x&sup2;</td>
-             <td class="AcBtn" onclick="AcBtnPresssed('AC')">AC</td>
-            <td class="delBtn" onclick="delBtnBtnPresssed('DEL')">DEL</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(7)">7</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(8)">8</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(9)">9</td>
+            <td class="operatorBtn" onclick="operatorBtnPressed('x')">&times;</td>
         </tr>
         <tr>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('+/-')">&plusmn;</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('()')">()</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('%')">%</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('/')">&divide;</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(4)">4</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(5)">5</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(6)">6</td>
+            <td class="operatorBtn" onclick="operatorBtnPressed('-')">&minus;</td>
         </tr>
         <tr>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(7)">7</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(8)">8</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(9)">9</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('x')">&times;</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(1)">1</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(2)">2</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(3)">3</td>
+            <td class="operatorBtn" onclick="operatorBtnPressed('+')">&plus;</td>
         </tr>
         <tr>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(4)">4</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(5)">5</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(6)">6</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('-')">&minus;</td>
+            <td class="digitalBtn" onclick="digitalBtnPressed(0)" colspan="2">0</td>
+            <td class="ACBtn" onclick="AcBtnPressed()">AC</td>
+            <td class="operatorBtn" onclick="operatorBtnPressed('/')">&divide;</td>
         </tr>
         <tr>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(1)">1</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(2)">2</td>
-            <td class="digitalBtn" onclick="digitalBtnPresssed(3)">3</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('+')">&plus;</td>
+            <td class="operatorBtn" colspan="4" onclick="operatorBtnPressed('=')">&equals;</td>
         </tr>
-        <tr>
-            <td class="digitalBtn"  onclick="digitalBtnPresssed(0)">0</td>
-              <td class="operatorBtn"  onclick="operatorBtnPresssed('.')">.</td>
-            <td class="operatorBtn" onclick="operatorBtnPresssed('pi')">&pi;</td>
-             <td class="operatorBtn" onclick="operatorBtnPresssed('=')">&equals;</td>
-        </tr>
+     
         
        
     </table>
